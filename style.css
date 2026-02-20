@@ -10,19 +10,38 @@ body {
   color: white;
   text-align: center;
   overflow-x: hidden;
+  cursor: none;
 }
 
-/* الهيرو */
+/* ===== cursor ===== */
+.cursor {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.08s ease;
+}
+
+/* ===== hero ===== */
 .hero {
-  padding: 100px 20px;
+  padding: 110px 20px;
   background: radial-gradient(circle at top, #1e293b, #020617);
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   margin-bottom: 15px;
 }
 
+.hero p {
+  opacity: 0.9;
+}
+
+/* زر */
 .btn {
   display: inline-block;
   margin-top: 25px;
@@ -36,12 +55,20 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 /* الأقسام */
 section {
   padding: 80px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* الخدمات */
@@ -57,15 +84,15 @@ section {
   padding: 25px;
   border-radius: 14px;
   min-width: 220px;
-  transition: 0.3s;
+  transition: 0.35s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.03);
   background: #1e293b;
 }
 
-/* المعرض */
+/* ===== gallery ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -75,21 +102,26 @@ section {
 
 .gallery img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: 0.35s;
-  cursor: pointer;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   filter: brightness(1.1);
 }
 
-/* زر واتساب */
+/* ===== contact ===== */
+.contact p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* ===== whatsapp ===== */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 22px;
+  right: 22px;
   background: #25d366;
   color: white;
   padding: 14px 18px;
@@ -97,10 +129,20 @@ section {
   text-decoration: none;
   font-weight: bold;
   z-index: 999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.25s;
 }
 
-/* تحسين الموبايل */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ===== mobile ===== */
 @media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
   .hero h1 {
     font-size: 30px;
   }
