@@ -2,130 +2,101 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Graphic Designer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Made by Abdo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- الخط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- cursor -->
-<div class="cursor"></div>
+<!-- ✅ Navbar -->
+<nav class="navbar">
+  <div class="logo">Made by Abdo</div>
+  <div class="nav-links">
+    <a href="#about">من أنا</a>
+    <a href="#works">أعمالي</a>
+    <a href="#contact">التواصل</a>
+  </div>
+</nav>
 
-<!-- الهيدر -->
+<!-- ✅ Hero -->
 <header class="hero">
-  <h1>مصمم جرافيك محترف</h1>
-  <p>تصاميم ثمنيلات يوتيوب وتصاميم السوشيال ميديا</p>
-  <a class="btn" href="#contact">تواصل معي</a>
+  <h1>مصمم هويات بصرية</h1>
+  <p>أحوّل الأفكار إلى تصاميم احترافية</p>
 </header>
 
-<!-- نبذة -->
-<section class="about">
-  <h2>نبذة عني</h2>
+<!-- ✅ من أنا -->
+<section id="about" class="section">
+  <h2>من أنا</h2>
   <p>
-    أنا مصمم جرافيك متخصص في تصميم المصغرات الاحترافية وتصاميم
-    السوشيال ميديا. أساعد صناع المحتوى والعلامات التجارية على
-    جذب الانتباه وزيادة التفاعل من خلال تصاميم قوية وجذابة.
+    أنا مصمم متخصص في بناء الهويات البصرية للعلامات التجارية،
+    أركز على تقديم تصاميم فخمة وعصرية تميز عملائي في السوق.
   </p>
 </section>
 
-<!-- الخدمات -->
-<section class="services">
-  <h2>خدماتي</h2>
-  <div class="cards">
-    <div class="card">تصميم ثمنيلات يوتيوب</div>
-    <div class="card">تصاميم سوشيال ميديا</div>
-    <div class="card">بنرات إعلانية</div>
-  </div>
-</section>
-
-<!-- معرض الأعمال -->
-<section class="portfolio">
+<!-- ✅ أعمالي -->
+<section id="works" class="section">
   <h2>أعمالي</h2>
 
-  <h3>براند 1</h3>
-  <div class="gallery">
-    <img src="images/brand1/work1.jpg">
-    <img src="images/brand1/work2.jpg">
-    <img src="images/brand1/work3.jpg">
-    <img src="images/brand1/work4.jpg">
-    <img src="images/brand1/work5.jpg">
-    <img src="images/brand1/work6.jpg">
-  </div>
+  <div class="cards">
 
-  <h3>براند 2</h3>
-  <div class="gallery">
-    <img src="images/brand2/work1.jpg">
-    <img src="images/brand2/work2.jpg">
-    <img src="images/brand2/work3.jpg">
-    <img src="images/brand2/work4.jpg">
-    <img src="images/brand2/work5.jpg">
-    <img src="images/brand2/work6.jpg">
-  </div>
+    <!-- 🧴 عطر -->
+    <div class="card">
+      <img src="images/brand1.jpg" alt="">
+      <h3>Brand 1</h3>
+      <p>هوية بصرية فاخرة لعلامة عطور تعكس الأناقة والفخامة.</p>
+    </div>
 
-  <h3>براند 3</h3>
-  <div class="gallery">
-    <img src="images/brand3/work1.jpg">
-    <img src="images/brand3/work2.jpg">
-    <img src="images/brand3/work3.jpg">
-    <img src="images/brand3/work4.jpg">
-  </div>
+    <!-- 🚗☕ مغسلة + مقهى -->
+    <div class="card">
+      <img src="images/brand2.jpg" alt="">
+      <h3>Brand 2</h3>
+      <p>تصميم متكامل لمغسلة سيارات حديثة تضم مقهى لخدمة مميزة.</p>
+    </div>
 
-  <h3>تصاميم متنوعة</h3>
-  <div class="gallery">
-    <img src="images/random/random1.jpg">
-    <img src="images/random/random2.jpg">
-    <img src="images/random/random3.jpg">
-    <img src="images/random/random4.jpg">
-    <img src="images/random/random5.jpg">
+    <!-- 🍔 برغر -->
+    <div class="card">
+      <img src="images/brand3.jpg" alt="">
+      <h3>Brand 3</h3>
+      <p>هوية جريئة وعصرية لمطعم برغر يستهدف عشاق الوجبات السريعة.</p>
+    </div>
+
   </div>
 </section>
 
-<!-- التواصل -->
-<section id="contact" class="contact">
-  <h2>تواصل معي</h2>
-  <p>واتساب: ضع رقمك هنا</p>
-  <p>إيميل: your@email.com</p>
+<!-- ✅ تصاميم الدمج المتحركة -->
+<section class="marquee-section">
+  <h2 style="text-align:center;color:white;margin-bottom:30px;">
+    تصاميم الدمج
+  </h2>
+
+  <div class="marquee">
+    <img src="images/design1.jpg">
+    <img src="images/design2.jpg">
+    <img src="images/design3.jpg">
+    <img src="images/design1.jpg">
+    <img src="images/design2.jpg">
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Graphic Designer</p>
+<!-- ✅ التواصل -->
+<section id="contact" class="section">
+  <h2>التواصل</h2>
+  <p>تواصل معي عبر:</p>
+  <div class="contact-links">
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#">Email</a>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 Made by Abdo
 </footer>
-
-<!-- زر واتساب -->
-<a class="whatsapp-float" href="https://wa.me/XXXXXXXXXX" target="_blank">
-  واتساب
-</a>
-
-<!-- سكربت الأنيميشن + الكيرسر -->
-<script>
-// ===== scroll animation =====
-const elements = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
-
-elements.forEach(el => {
-  observer.observe(el);
-});
-
-// ===== custom cursor =====
-const cursor = document.querySelector(".cursor");
-
-window.addEventListener("mousemove", e => {
-  cursor.style.top = e.clientY + "px";
-  cursor.style.left = e.clientX + "px";
-});
-
-// إخفاء الكيرسر في الهاتف
-if (window.innerWidth < 768) {
-  cursor.style.display = "none";
-}
-</script>
 
 </body>
 </html>
